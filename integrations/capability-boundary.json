@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "component": {
+    "id": "JEV",
+    "role": "decisões tipadas, triagem e guardrails"
+  },
+  "reason": "functional-complementation",
+  "upstream_capability_sources": [
+    "pydantic-ai"
+  ],
+  "canonical_control_plane": "divibisoul/Orquestrador-",
+  "integration": {
+    "agent_engineering": "soul.engineer.verification",
+    "routing": "N07 decision adapter",
+    "execution": "typed decision boundary",
+    "verification": "schema validation + fail-closed decision tests",
+    "structural_state": "REAL",
+    "runtime_state": "PROJECTED"
+  },
+  "rule": "upstream source remains independent; adapter/configuration/runtime evidence is required before EXECUTABLE"
+}
