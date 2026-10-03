@@ -28,7 +28,10 @@
         "verification.before.action"
       ],
       "directAffinity": true,
-      "state": "CATALOG_BOUND"
+      "state": "CATALOG_BOUND",
+      "structural_state": "REAL",
+      "requires_adapter": true,
+      "runtime_state": "PROJECTED"
     },
     {
       "id": "superagi",
@@ -50,7 +53,10 @@
         "decision.workflow.guardrail"
       ],
       "directAffinity": false,
-      "state": "CATALOG_BOUND"
+      "state": "CATALOG_BOUND",
+      "structural_state": "REAL",
+      "requires_adapter": true,
+      "runtime_state": "PROJECTED"
     },
     {
       "id": "langgraph",
@@ -71,7 +77,10 @@
         "decision.workflow.guardrail"
       ],
       "directAffinity": false,
-      "state": "CATALOG_BOUND"
+      "state": "CATALOG_BOUND",
+      "structural_state": "REAL",
+      "requires_adapter": true,
+      "runtime_state": "PROJECTED"
     },
     {
       "id": "crewai",
@@ -91,7 +100,10 @@
         "decision.workflow.guardrail"
       ],
       "directAffinity": false,
-      "state": "CATALOG_BOUND"
+      "state": "CATALOG_BOUND",
+      "structural_state": "REAL",
+      "requires_adapter": true,
+      "runtime_state": "PROJECTED"
     },
     {
       "id": "microsoft-agent-framework",
@@ -112,7 +124,10 @@
         "decision.workflow.guardrail"
       ],
       "directAffinity": false,
-      "state": "CATALOG_BOUND"
+      "state": "CATALOG_BOUND",
+      "structural_state": "REAL",
+      "requires_adapter": true,
+      "runtime_state": "PROJECTED"
     },
     {
       "id": "openhands",
@@ -132,7 +147,10 @@
         "decision.workflow.guardrail"
       ],
       "directAffinity": false,
-      "state": "CATALOG_BOUND"
+      "state": "CATALOG_BOUND",
+      "structural_state": "REAL",
+      "requires_adapter": true,
+      "runtime_state": "PROJECTED"
     },
     {
       "id": "metagpt",
@@ -152,7 +170,10 @@
         "decision.workflow.guardrail"
       ],
       "directAffinity": false,
-      "state": "CATALOG_BOUND"
+      "state": "CATALOG_BOUND",
+      "structural_state": "REAL",
+      "requires_adapter": true,
+      "runtime_state": "PROJECTED"
     },
     {
       "id": "agentscope",
@@ -177,7 +198,10 @@
         "decision.workflow.guardrail"
       ],
       "directAffinity": false,
-      "state": "CATALOG_BOUND"
+      "state": "CATALOG_BOUND",
+      "structural_state": "REAL",
+      "requires_adapter": true,
+      "runtime_state": "PROJECTED"
     },
     {
       "id": "letta-code",
@@ -196,7 +220,10 @@
         "decision.context.stateful"
       ],
       "directAffinity": true,
-      "state": "CATALOG_BOUND"
+      "state": "CATALOG_BOUND",
+      "structural_state": "REAL",
+      "requires_adapter": true,
+      "runtime_state": "PROJECTED"
     },
     {
       "id": "browser-use",
@@ -214,7 +241,10 @@
         "decision.action.guardrail"
       ],
       "directAffinity": false,
-      "state": "CATALOG_BOUND"
+      "state": "CATALOG_BOUND",
+      "structural_state": "REAL",
+      "requires_adapter": true,
+      "runtime_state": "PROJECTED"
     },
     {
       "id": "smolagents",
@@ -235,7 +265,10 @@
         "decision.workflow.guardrail"
       ],
       "directAffinity": false,
-      "state": "CATALOG_BOUND"
+      "state": "CATALOG_BOUND",
+      "structural_state": "REAL",
+      "requires_adapter": true,
+      "runtime_state": "PROJECTED"
     },
     {
       "id": "pydantic-ai",
@@ -257,7 +290,10 @@
         "jev.systemone"
       ],
       "directAffinity": true,
-      "state": "CATALOG_BOUND"
+      "state": "CATALOG_BOUND",
+      "structural_state": "REAL",
+      "requires_adapter": true,
+      "runtime_state": "PROJECTED"
     },
     {
       "id": "llama-index",
@@ -277,7 +313,10 @@
         "decision.context.retrieval"
       ],
       "directAffinity": false,
-      "state": "CATALOG_BOUND"
+      "state": "CATALOG_BOUND",
+      "structural_state": "REAL",
+      "requires_adapter": true,
+      "runtime_state": "PROJECTED"
     },
     {
       "id": "dspy",
@@ -297,7 +336,10 @@
         "model.routing"
       ],
       "directAffinity": true,
-      "state": "CATALOG_BOUND"
+      "state": "CATALOG_BOUND",
+      "structural_state": "REAL",
+      "requires_adapter": true,
+      "runtime_state": "PROJECTED"
     },
     {
       "id": "whisper",
@@ -314,7 +356,10 @@
         "decision.multimodal.routing"
       ],
       "directAffinity": false,
-      "state": "CATALOG_BOUND"
+      "state": "CATALOG_BOUND",
+      "structural_state": "REAL",
+      "requires_adapter": true,
+      "runtime_state": "PROJECTED"
     },
     {
       "id": "kokoro",
@@ -331,7 +376,10 @@
         "decision.multimodal.routing"
       ],
       "directAffinity": false,
-      "state": "CATALOG_BOUND"
+      "state": "CATALOG_BOUND",
+      "structural_state": "REAL",
+      "requires_adapter": true,
+      "runtime_state": "PROJECTED"
     },
     {
       "id": "everything-claude-code",
@@ -354,7 +402,10 @@
         "verification.before.action"
       ],
       "directAffinity": true,
-      "state": "CATALOG_BOUND"
+      "state": "CATALOG_BOUND",
+      "structural_state": "REAL",
+      "requires_adapter": true,
+      "runtime_state": "PROJECTED"
     },
     {
       "id": "swarmclaw",
@@ -376,7 +427,10 @@
         "decision.workflow.guardrail"
       ],
       "directAffinity": false,
-      "state": "CATALOG_BOUND"
+      "state": "CATALOG_BOUND",
+      "structural_state": "REAL",
+      "requires_adapter": true,
+      "runtime_state": "PROJECTED"
     },
     {
       "id": "mem0",
@@ -395,7 +449,10 @@
         "decision.context.memory"
       ],
       "directAffinity": true,
-      "state": "CATALOG_BOUND"
+      "state": "CATALOG_BOUND",
+      "structural_state": "REAL",
+      "requires_adapter": true,
+      "runtime_state": "PROJECTED"
     },
     {
       "id": "letta",
@@ -415,7 +472,10 @@
         "decision.context.stateful"
       ],
       "directAffinity": true,
-      "state": "CATALOG_BOUND"
+      "state": "CATALOG_BOUND",
+      "structural_state": "REAL",
+      "requires_adapter": true,
+      "runtime_state": "PROJECTED"
     },
     {
       "id": "langfuse",
@@ -437,7 +497,10 @@
         "decision.evaluation"
       ],
       "directAffinity": true,
-      "state": "CATALOG_BOUND"
+      "state": "CATALOG_BOUND",
+      "structural_state": "REAL",
+      "requires_adapter": true,
+      "runtime_state": "PROJECTED"
     },
     {
       "id": "vllm",
@@ -456,7 +519,10 @@
         "decision.resource.gate"
       ],
       "directAffinity": true,
-      "state": "CATALOG_BOUND"
+      "state": "CATALOG_BOUND",
+      "structural_state": "REAL",
+      "requires_adapter": true,
+      "runtime_state": "PROJECTED"
     },
     {
       "id": "sglang",
@@ -475,7 +541,10 @@
         "decision.resource.gate"
       ],
       "directAffinity": true,
-      "state": "CATALOG_BOUND"
+      "state": "CATALOG_BOUND",
+      "structural_state": "REAL",
+      "requires_adapter": true,
+      "runtime_state": "PROJECTED"
     },
     {
       "id": "ray",
@@ -496,7 +565,10 @@
         "decision.resource.gate"
       ],
       "directAffinity": true,
-      "state": "CATALOG_BOUND"
+      "state": "CATALOG_BOUND",
+      "structural_state": "REAL",
+      "requires_adapter": true,
+      "runtime_state": "PROJECTED"
     },
     {
       "id": "megatron-lm",
@@ -515,7 +587,10 @@
         "decision.resource.gate"
       ],
       "directAffinity": false,
-      "state": "CATALOG_BOUND"
+      "state": "CATALOG_BOUND",
+      "structural_state": "REAL",
+      "requires_adapter": true,
+      "runtime_state": "PROJECTED"
     }
   ],
   "soul_peer_count": 9,
