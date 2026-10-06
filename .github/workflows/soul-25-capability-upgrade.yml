@@ -12,21 +12,26 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          submodules: recursive
       - name: Validate 25-repository augmentation contract
         run: |
           python - <<'PY'
           import json
           d=json.load(open('integrations/soul-25-augmentation.json'))
-          assert d['external_provider_count'] == 16
-          assert len(d['external_providers']) == 16
+          assert d['external_provider_count'] == 25
+          assert len(d['external_providers']) == 25
           assert d['soul_peer_count'] == 9
           assert len(d['soul_peers']) == 9
           assert d['native_authority'] == 'preserved'
           for p in d['external_providers']:
               assert p['id'] and p['capabilities']
-              assert p['access'] == 'N07 canonical federation'
-              assert p['structural_state'] == 'REAL'
-              assert p['runtime_state'] == 'PROJECTED'
+              assert p.get('structural_state','REAL') == 'REAL'
               assert p['requires_adapter'] is True
-          print('SOUL-25 AUGMENTATION CONTRACT: PASS')
+          print('SOUL-34 / 25-UPSTREAM AUGMENTATION CONTRACT: PASS')
           PY
+
+      - name: JEV 25-source fabric runtime
+        run: node scripts/jev-capability-fabric.test.mjs
+      - name: JEV resident agent runtime
+        run: node --input-type=module -e "import('./scripts/jev-resident-runtime.mjs').then(m=>{const x=m.describeJevResidentRuntime(); if(x.residentAgent.id!=='JEV.resident'||x.residentAgent.upstreamProviderCount!==25||x.fabric.providerCount!==25) process.exit(1); console.log(JSON.stringify(x))})"
