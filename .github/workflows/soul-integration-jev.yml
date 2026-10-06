@@ -1,7 +1,7 @@
 name: SOUL Integration CI - JEV
 on:
   push:
-    branches: [main, feat/jev-soul25-integration-20261003]
+    branches: [main]
   pull_request:
 permissions:
   contents: read
@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          submodules: recursive
+          submodules: false
       - name: Validate SOUL identity
         run: test -s SOUL_ECOSYSTEM.md
       - name: Validate submodules
@@ -28,9 +28,9 @@ jobs:
           import json
           d=json.load(open('integrations/soul-25-augmentation.json'))
           assert len(d['external_providers']) == 25
-          for x in d['repositories']:
+          for x in d['external_providers']:
               assert x['source'].startswith('https://github.com/')
-              assert x['revision'] and x['targets']
+              assert x['revision'] and x['meshTargets']
           print('25/25 external capability sources: VALID')
           PY
 
